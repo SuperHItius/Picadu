@@ -9,7 +9,7 @@ main {
 
 body {
     font-family: sans-serif;
-    background: #E5E5E5;
+    background: #FFF;
 }
 
 .header {
@@ -22,7 +22,7 @@ body {
 
 .header-wrapper {
     max-width: 1200px;
-    width: 90%;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -86,7 +86,7 @@ body {
 
 
 .search-input::-moz-placeholder {
-    color: #BFBFBF; /* Цвет подсказывающего текста */
+    color: #BFBFBF; 
    }
    .search-input::-webkit-input-placeholder { color:#BFBFBF; }
    .search-input:-ms-input-placeholder { color: #BFBFBF; }
@@ -177,6 +177,10 @@ body {
     cursor: pointer;
 }
 
+.post-button span{
+    margin-left: 6px;
+}
+
 .post-author {
     display: flex;
     align-items: center;
@@ -205,7 +209,10 @@ body {
 
 .icon-like, .icon-comment {
     margin-right: 6px;
+    outline: 1px solid red;
 }
+
+
 
 .side-bar {
     width: 100%;
@@ -216,15 +223,15 @@ body {
 .side-bar__menu {
     max-width: 370px;
     width: 100%;
-    outline: 1px solid red;
 }
 
 .side-bar__menu__header {
-    background-color: #E8E8E8;
+    background-color: #FAFAFA;
     padding: 15px 26px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 1px solid #E8E8E8;
 }
 
 .side-bar__menu__header__block-left {
@@ -256,7 +263,7 @@ body {
 }
 
 .side-bar__autor-menu {
-    outline: 1px solid red;
+    border: 1px solid #E8E8E8;
 }
 
 .side-bar__autor-menu__tabl {
@@ -304,7 +311,6 @@ body {
     background-color: #FAAD14;
     border-radius: 4px;
     margin-top: 41px;
-    margin-bottom: 42px;
     outline: none;
     border: none;
     color: #FFFFFF;
@@ -323,4 +329,28 @@ body {
 .side-bar__comments {
     max-width: 370px;
     width: 100%;
+}
+
+.side-bar__comments__title {
+    width: 100%;
+    margin-top: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 22px;
+    border: 1px solid #E8E8E8;
+    color: #595959;
+    background: #FAFAFA;
+}
+
+.side-bar__comments__heading {
+    color: #D48806;
+}
+
+.side-bar__comments__body {
+    padding-top: 28px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding: 28px 22px 36px 22px;
+    color: #262626;
+    border: 1px solid #E8E8E8;
 }
