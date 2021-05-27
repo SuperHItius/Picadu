@@ -21,6 +21,11 @@ body {
     margin-bottom: 30px;
 }
 
+.header-logo-image {
+    padding-right: 30px;
+
+}
+
 .header-wrapper {
     max-width: 1230px;
     padding: 0 30px 0 30px;
@@ -53,7 +58,7 @@ body {
 
 .input-group {
     width: 237px;
-    height: 32px;
+    height: 40px;
     position: relative;
     background: #ffffff;
     border-radius: 4px;
@@ -69,10 +74,10 @@ body {
     display: flex; 
     align-items: center; 
     position: fixed;
-    top: 25px;
+    top: 30px;
     right: 25px;
-    width: 26px;
-    height: 26px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
     z-index: 1;
 }
@@ -101,18 +106,21 @@ body {
     position: fixed;
     visibility: hidden;
     top: 0;
-    left: -100%;
+    right: -100%;
     width: 300px;
     height: 100%;
-    margin: 0;
-    padding: 80px 0;
-    list-style: none;
-    text-align: center;
     background-color: #ECEFF1;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-  }
+}
 
-  .menu__item {
+.menu__items {
+    list-style: none;
+    text-align: center;
+    padding: 80px 0;
+    margin: 0;
+}
+
+.menu__item {
     display: block;
     padding: 12px 24px;
     color: #333;
@@ -138,7 +146,7 @@ body {
   }
   #menu__toggle:checked ~ .menu__box {
     visibility: visible;
-    left: 0;
+    right: 0;
   }
 
   .menu__btn > span,
@@ -460,9 +468,6 @@ body {
     }
 
     .input-group {
-        width: 100%;
-        /* margin-left: 30px;
-        margin-right: 30px; */
         margin: auto;
         width: 80%;
         right: 30px;
@@ -472,10 +477,7 @@ body {
         justify-content: flex-end;
         right: 15px;
     }
-    .search-icon {
-        /* right: -180px; */
-        /* justify-content: flex-end; */
-    }
+    
     .content {
         margin: none;
         padding-left: 30px;
@@ -488,6 +490,11 @@ body {
     .post {
         padding-right: 15px;
     }
+
+    .header-logo-image {
+        width: 85px;
+        height: 20px;
+    }
 }
 
 
@@ -498,6 +505,4 @@ body {
     #menu__toggle {
         display: none;
     }
-
-
 }
