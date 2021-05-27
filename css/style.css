@@ -89,7 +89,7 @@ body {
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: #616161;
+  background-color: #EEEEEE;
 }
 
 .menu__btn > span::before {
@@ -107,10 +107,33 @@ body {
     visibility: hidden;
     top: 0;
     right: -100%;
-    width: 300px;
+    width: 100%;
     height: 100%;
-    background-color: #ECEFF1;
+    background-color:#3F3F3F;;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+
+.mobile_header-menu {
+    border: 1px solid red;
+    height: 90px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #203040;
+
+}
+
+.mobile_header-menu__word {
+    padding-right: 80px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #EEEEEE;
+}
+
+.fas {
+    font-size: 30px;
+    color: #EEEEEE;
 }
 
 .menu__items {
@@ -123,13 +146,14 @@ body {
 .menu__item {
     display: block;
     padding: 12px 24px;
-    color: #333;
+    color: #EEEEEE;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 600;
     text-decoration: none;
-  }
-  .menu__item:hover {
+}
+
+.menu__item:hover {
     background-color: #CFD8DC;
   }
 
@@ -494,6 +518,10 @@ body {
     .header-logo-image {
         width: 85px;
         height: 20px;
+    }
+
+    .side-bar__menu__header__avatar {
+
     }
 }
 
