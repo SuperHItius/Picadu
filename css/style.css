@@ -66,6 +66,10 @@ body {
     border: 1px solid #D9D9D9;
 }
 
+.hamburger-menu {
+    z-index: 1000;
+}
+
 #menu__toggle {
     opacity: 0;
 }
@@ -114,7 +118,7 @@ body {
 }
 
 .mobile_header-menu {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 90px;
     display: flex;
     flex-direction: row-reverse;
@@ -130,8 +134,8 @@ body {
     justify-content: space-between;
     max-width: 160px;
     width: 100%;
-    outline: 1px solid green;
-    padding-left: 20px;
+    /* outline: 1px solid green; */
+    padding-left: 15px;
     /* border: grey;
     border-radius: 50px; */
 }
@@ -170,6 +174,14 @@ body {
     display: block;
     padding: 12px 24px;
     color: #EEEEEE;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu__item__hot {
+    color: #FF4500;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 600;
@@ -359,7 +371,7 @@ body {
 
 .icon-like, .icon-comment {
     margin-right: 6px;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 
@@ -563,6 +575,14 @@ body {
     .side-bar__menu__header__avatar {
         width: 40px;
         height: 40px;
+    }
+
+    ..side-bar__pablic-post {
+        display: none;
+    }
+
+    .side-bar {
+        display: none;
     }
 
 }
