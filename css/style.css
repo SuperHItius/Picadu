@@ -315,6 +315,7 @@ body {
 .tags__like {
     display: flex;
     justify-content: space-between;
+    display: none;
 }
 
 .post-footer {
@@ -322,10 +323,11 @@ body {
     background: #FAFAFA;
     display: flex;
     justify-content: space-between;
-    padding-left: 35px;
+    padding: 13px 35px 13px 35px;
+    /* padding-left: 35px;
     padding-right: 35px;
     padding-top: 13px;
-    padding-bottom: 13px;
+    padding-bottom: 13px; */
 }
 
 .post-button .icon {
@@ -616,9 +618,52 @@ body {
     }
 
     .tags__may {
+        display: block;
         font-size: 15px;
         padding-right: 10px;
         z-index: 0;
+        color: #BFBFBF;
+        font-size: 14px;
+        line-height: 22px;
+        margin-right: 10px;
+        text-decoration: none;
+    }
+
+    .tags__like {
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px 10px 10px;
+        color: #000;
+    }
+
+    .fa-chevron-up {
+        color: #000;
+    }
+
+    .fa-chevron-down {
+        color: #000;
+    }
+
+    .tags__like-quantity {
+        font-size: 25px;
+    }
+
+    .post-buttons {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .post-buttons-right {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .post-buttons-left {
+        display: flex;
+        justify-content: space-between;
     }
 
     .author-avatar {
