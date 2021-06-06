@@ -330,6 +330,7 @@ body {
     padding-bottom: 13px; */
 }
 
+
 .post-button .icon {
     fill: #8C8C8C;
 }
@@ -345,10 +346,15 @@ body {
     color: #8C8C8C;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     font-size: 14px;
     line-height: 22px;
     margin-right: 19px;
     cursor: pointer;
+}
+
+.post-buttons__mobile {
+    display: none;
 }
 
 .post-button span{
@@ -638,19 +644,24 @@ body {
         color: #000;
     }
 
-    .fa-chevron-up {
+    .fa-arrow-alt-circle-up {
         color: #000;
     }
 
-    .fa-chevron-down {
+    .fa-arrow-alt-circle-down {
         color: #000;
     }
 
     .tags__like-quantity {
-        font-size: 25px;
+        font-size: 20px;
+        padding: 0 10px;;
     }
 
     .post-buttons {
+        display: none;
+    }
+
+    .post-buttons__mobile {
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -664,6 +675,13 @@ body {
     .post-buttons-left {
         display: flex;
         justify-content: space-between;
+    }
+
+    .tags__like-emot {
+        border: 1px solid rgb(114, 111, 111);
+        border-radius: 20px;
+        padding: 10px;
+        font-size: 12px;
     }
 
     .author-avatar {
